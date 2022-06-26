@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TbcTask4</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="lets_introduce">lets introduce</string>
+    <string name="username">Username</string>
+    <string name="hello">Hello!</string>
+    <string name="content_desc_rectangle_image">rectangle_image</string>
+</resources>

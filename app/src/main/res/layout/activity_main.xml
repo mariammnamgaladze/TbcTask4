@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/hello"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/introduceText"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="233dp"
+        android:text="@string/lets_introduce"
+        android:textColor="#96A7AF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingText" />
+
+    <ImageView
+        android:id="@+id/rectangleImageView"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="334dp"
+        android:contentDescription="@string/content_desc_rectangle_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/ic_next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="373dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:autofillHints="name"
+        android:drawableStart="@drawable/ic_icon"
+        android:hint="@string/your_full_name"
+        android:inputType="textPersonName"
+        android:drawablePadding="20dp"
+        android:paddingVertical="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="#96A7AF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduceText" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="372dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="76dp"
+        android:autofillHints="username"
+        android:drawableStart="@drawable/ic_icon"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        android:paddingVertical="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="#96A7AF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
